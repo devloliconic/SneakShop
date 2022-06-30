@@ -9,7 +9,88 @@ $peach: #DBBBA9;
 $whitepeach: #FFF4EE;
 $lightgray: #B2B5BB;
 
+html{
+    font-size: 10px;
+}
 
 body{
-    font-family: 'IntroRegular';
+    font-family: 'IntroBook';
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.purpleback{
+    background-color: $purple;
+}
+
+.header{
+    padding-top: 2.7rem;
+    &__items{
+        display: flex;
+        align-items: center;
+        padding-bottom: 2.7rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    &__logo{
+        text-decoration: none;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+        flex-basis: 25%;
+    }
+    &__nav{
+        gap: 4rem;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 14px;
+        color: #FFFFFF;
+        transition: .2s all;
+        &:hover{
+            color: $lightgray;
+        }
+    }
+    &__cart{
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        border: 0;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 14px;
+        color: #FFFFFF;
+        transition: .2s all;
+        &:hover{
+            color: $lightgray;
+        }
+    }
+    &__cartimg{
+        position: absolute;
+        top: -3px;
+        right: -20px;
+    }
+    &__cartext{
+        background-color: $red;
+        padding: 3px 7px 3px 7px;
+        border-radius: 100%;
+        position: absolute;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 14px;
+        right: -29px;
+        bottom: -10px;
+    }
+
 }
