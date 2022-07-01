@@ -8,7 +8,7 @@ $gray: #444B58;
 $peach: #DBBBA9;
 $whitepeach: #FFF4EE;
 $lightgray: #B2B5BB;
-
+$hovergray: #31343C;
 html{
     font-size: 10px;
 }
@@ -251,6 +251,13 @@ body{
         font-size: 1.6rem;
         line-height: 16px;
         text-align: center;
+        background-color: transparent;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         &:nth-child(1){
             border-left: 1px solid $peach;
         }
@@ -279,10 +286,10 @@ body{
         padding: 22px 77.5px;
         background-color: $gray;
         border-radius: 4px;
-        /* identical to box height */
-
-        display: flex;
-        align-items: center;
+        transition: .2s all linear;
+        &:hover{
+            background-color: $hovergray;
+        }
     }
     &__throwoff{
         display: block;
