@@ -152,6 +152,7 @@ body{
 }
 
 .main{
+    margin-bottom:6rem;
     &__title{
         font-style: normal;
         font-weight: 700;
@@ -367,4 +368,64 @@ body{
 }
 .main__checkbox:checked+label::before {
     background-image: url("../img/chek.svg");
-  }
+}
+
+
+.about{
+    margin-bottom: 100px;
+    background-color: $purple;
+    background-image: url(../img/figure.svg);
+    background-size: 550px 424px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    &__flex{
+        // padding-top:22.2rem ;
+        // padding-bottom: 15.8rem;
+        display: flex;
+        align-items: center;
+        gap: 5.3rem ;
+    }
+    &__title{
+        margin: 0;
+        margin-bottom: 2rem;
+        font-style: normal;
+        color: white;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    &__subtitle{
+        margin: 0;
+        margin-bottom: 2rem;
+        color: white;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 140%;
+        max-width: 380px;
+    }
+    &__excerpt{
+        margin: 0;
+        display: flex;
+        gap: 2rem;
+        justify-content: end;
+        align-items: center;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 20px;
+        color: #FFFFFF;
+        &::before{
+            content: "";
+            height: 2px;
+            width: 30px;
+            background-color: white;
+        }
+    }
+    &__image{
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
