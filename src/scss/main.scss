@@ -165,7 +165,7 @@ body{
         gap: 1rem;
     }
     &__aside{
-        background-color:$whitepeach;
+        background-color: $whitepeach;
         padding: 20px 20px;
         box-sizing: border-box;
         max-height: 681px;
@@ -306,6 +306,7 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        margin-bottom: 6.2rem;
     }
     &__imgcontainer{
         width: 280px;
@@ -332,6 +333,20 @@ body{
         font-weight: 400;
         font-size: 2rem;
         line-height: 20px;
+    }
+    &__linkcenter{
+        text-align: center;
+    }
+    &__link{
+        text-decoration: none;
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 16px;
+        padding: 22px 47px;
+        background-color: $red;
+        border-radius: 4px;
     }
 }
 .main__checkbox + label {
