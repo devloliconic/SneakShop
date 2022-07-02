@@ -520,7 +520,11 @@ body{
         padding: 17px 42px;
         border: 1px solid #444B58;
         border-radius: 4px;
+        transition: .2s all linear;
         cursor: pointer;
+        &:hover{
+            background-color: #444B58;
+        }
     }
 }
 
@@ -531,6 +535,7 @@ body{
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: 28%;
+    margin-bottom: 6rem;
     &__content{
         padding-top: 6rem;
         padding-bottom:6rem;
@@ -575,5 +580,59 @@ body{
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
+    }
+}
+
+.question{
+    &__logo{
+        margin: 0;
+        margin-bottom: 4rem;
+        color: $gray;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    &__box{
+        margin-bottom: 1.8rem;
+    }
+    &__text{
+        margin-left: 150px;
+    }
+    &__flex{
+        padding-top: 3rem;
+        border-top: 1px solid #242424;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        color: #242424;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 20px;
+    }
+    &__btn{
+        width: 25px;
+        height: 26px;
+        border: 0;
+        background-color: transparent;
+        background-image: url(../img/plus.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        cursor: pointer;
+        &_close{
+            background-image: url(../img/close.svg) ;
+        }
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        max-width: 800px;
+        color: rgba(36, 36, 36, 0.5);
     }
 }
