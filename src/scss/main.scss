@@ -584,6 +584,7 @@ body{
 }
 
 .question{
+    margin-bottom: 6rem;
     &__logo{
         margin: 0;
         margin-bottom: 4rem;
@@ -595,6 +596,9 @@ body{
     }
     &__box{
         margin-bottom: 1.8rem;
+        &:last-of-type{
+            border-bottom: 1px solid #242424;
+        }
     }
     &__text{
         margin-left: 150px;
@@ -634,5 +638,101 @@ body{
         line-height: 140%;
         max-width: 800px;
         color: rgba(36, 36, 36, 0.5);
+    }
+}
+
+.contact{
+    background-color: #F3F6F6;
+    &__flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 6.1rem;
+        gap: 13.8rem;
+    }
+    &__title{
+        margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+
+        color: $gray;
+        margin-bottom: 6rem;
+
+    }
+    &__ghost{
+        margin: 0;
+        margin-bottom: 4rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 140%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #B2B5BB;
+        &:nth-last-of-type(2){
+            margin-bottom: 2rem;
+        }
+    }
+    &__tel{
+        margin-bottom: 1rem;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 140%;
+        color: $gray;
+        transition: .2s all linear;
+        &:hover{
+            color: #31363f;
+        }
+    }
+    &__addres{
+        margin: 0;
+        margin-bottom: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 140%;
+        color: $gray;
+    }
+    &__socialbox{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__social{
+        width: 44px;
+        height: 43px;
+        background-color: #0E5A4C;
+        border-radius: 100%;
+        background-position: center center;
+
+        background-repeat: no-repeat;
+        &_vk{
+            background-image: url(../img/wk.svg);
+            background-size: 23px 13px;
+        }
+        &_inst{
+            background-image: url(../img/inst.svg);
+            background-size: 23px 24px;
+        }
+    }
+    &__map{
+        position: relative;
+    }
+    &__dot{
+        position: absolute;
+        &_1{
+            top: 146px;
+            left: 256px;
+        }
+        &_2{
+            top:243px;
+            left: 340px;
+        }
+        &_3{
+            top: 203px;
+            right: 175px;
+        }
     }
 }
