@@ -433,7 +433,7 @@ body{
 
 
 .choice{
-
+    margin-bottom: 6rem;
     &__content{
         background-color: #FFF4EE;
         padding: 4rem 10rem 5.7rem 10rem;
@@ -466,5 +466,114 @@ body{
         font-size: 2.4rem;
         line-height: 24px;
         color: $gray;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px 70px;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid #808080;
+    }
+    &__chekflex{
+        margin-top: 1.4rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__imgcontainer{
+        width: 280px;
+        height: 120px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__chektext{
+        margin: 0;
+        color: black;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 16px;
+    }
+    &__stepflex{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__step{
+        margin: 0;
+        color: #808080;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 16px;
+    }
+    &__next{
+        text-decoration: none;
+        background: transparent;
+        border: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 16px;
+        padding: 17px 42px;
+        border: 1px solid #444B58;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+
+.team{
+    background-color: $purple;
+    background-image: url(../img/team/background.jpg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size: 28%;
+    &__content{
+        padding-top: 6rem;
+        padding-bottom:6rem;
+    }
+    &__title{
+        margin: 0;
+        color: white;
+        margin-bottom: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem 2rem;
+    }
+    &__imgcontainer{
+        width: 380px;
+        height: 400px;
+        border-radius: 4px;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 4px;
+    }
+    &__name{
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 24px;
+    }
+    &__role{
+        color: white;
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
     }
 }
