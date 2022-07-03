@@ -343,6 +343,10 @@ body{
         padding: 22px 47px;
         background-color: $red;
         border-radius: 4px;
+        transition: .2s all linear;
+        &:hover{
+            background-color: #CC4949;
+        }
     }
 }
 
@@ -734,5 +738,78 @@ body{
             top: 203px;
             right: 175px;
         }
+    }
+}
+
+.instagram{
+    padding-top: 7rem;
+    background-color: #FFF4EE;
+    &__flex{
+        display: flex;
+        align-items: flex-start;
+        gap: 6rem;
+    }
+    &__form{
+        background-color: $purple;
+        padding:40px 20px 40px 20px;
+        border-radius: 4px;
+    }
+    &__title{
+        margin: 0;
+        margin-bottom:2rem;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    &__subtitle{
+        width: 280px;
+        margin:  0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+        color: white;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 16px;
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18.88px 0 18.88px 20px;
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        color: $lightgray;
+        border: 0;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+    }
+    &__button{
+        width: 100%;
+        padding: 22px 128px;
+        border: 0;
+        background-color: $red;
+        font-size: 1.6rem;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .2s all linear;
+        &:hover{
+            background-color: #CC4949;
+        }
+    }
+    &__inst{
+        width: 157px;
+        height: 55.65px;
+        background-image: url(../img/instlogo.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
