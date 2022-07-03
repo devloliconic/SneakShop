@@ -742,6 +742,7 @@ body{
 }
 
 .instagram{
+    padding-bottom: 8.2rem;
     padding-top: 7rem;
     background-color: #FFF4EE;
     &__flex{
@@ -805,11 +806,85 @@ body{
             background-color: #CC4949;
         }
     }
+    &__item{
+        margin-bottom: 2rem;
+        
+    }
     &__inst{
-        width: 157px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 158px;
         height: 55.65px;
         background-image: url(../img/instlogo.svg);
         background-position: center center;
         background-repeat: no-repeat;
+    }
+    &__grid{
+        display: grid;
+        grid-template-areas: "a b b c" "z b b g";
+        gap: 14px 18px;
+    }
+    &__imgcontainer{
+        width: 157px;
+        height: 160.99px;
+        &_big{
+            width: 330px;
+            height: 336.88px;
+        }
+        &:nth-child(1){
+            grid-area: a;
+        }
+        &:nth-child(2){
+            grid-area: b;
+        }
+        &:nth-child(3){
+            grid-area: c;
+        }
+        &:nth-child(4){
+            grid-area: z;
+        }
+        &:nth-child(5){
+            grid-area: g;
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+}
+
+.footer{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: $gray;
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        text-decoration: none;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    &__nav{
+        gap: 4rem;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 14px;
+        color: #FFFFFF;
+        transition: .2s all;
+        &:hover{
+            color: $lightgray;
+        }
     }
 }
